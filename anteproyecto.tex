@@ -1,0 +1,102 @@
+%% Formato para la presentaci\'on de anteproyectos de grado. 
+%% Carrera de Ingenier\'ia de Sistemas y Computaci'on
+%% Pontificia Universidad Javeriana
+%% Septiembre 2011
+
+
+\documentclass[11pt,twoside]{thesis}
+\usepackage{enumerate}
+\usepackage{longtable}
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage{makeidx}
+\usepackage{graphics}
+\usepackage[spanish]{babel}
+
+%%%%%%%%%%%%%%%%
+% TITULO DEL PROYECTO
+%%%%%%%%%%%%%%%%
+\titulo{T\'itulo del Trabajo de Grado}
+
+%%%%%%%
+% AUTORES
+%%%%%%%
+\autorA{COD}{Primer Autor}
+\autorB{COD}{Segundo Autor} %Opcional
+
+%%%%%%%
+% FECHA DE ENTREGA
+%%%%%%%
+
+\fecha{Fecha de Entrega}
+
+%%%%%%%%%%%%%%%%%
+% DIRECTOR DEL PROYECTO
+% DIRECTOR DE CARRERA
+%%%%%%%%%%%%%%%%%
+
+\directorproyecto{Dr.}{Nombre del Director}
+\directorcarrera{Dr.}{Nombre del Director de Carrera}
+
+\include{format}
+\makeindex
+
+
+
+\begin{document}
+
+\maketitle
+\makecoverletter
+
+%%%%%%%%%%%%%%%%%%
+% ABSTRACT
+%%%%%%%%%%%%%%%%%%
+\chapter*{Resumen} \input{abstract}
+
+%%%%%%%%%%%%%%%%%
+%%%% TABLE OF CONTENTS
+%%%% AND PREABLE
+%%%%%%%%%%%%%%%%%
+  
+  
+ \tableofcontents 
+% \listoffigures   \listoftables   \mainmatter
+
+
+\dominitoc
+\cleardoublepage
+
+%%%%%%%%%%%%%%%%%%%%%%
+% INTRODUCCION
+%%%%%%%%%%%%%%%%%%%%%%
+\chapter*{Introducci\'on}
+\input{introduccion.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%
+% DESCRIPCION DEL PROBLEMA
+%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Descripci\'on del Problema}
+\input{descripcion.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%
+% DESARROLLO DEL PROYECTO
+%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Desarrollo del Proyecto}
+\input{desarrollo.tex}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% BIBLIOGRAFIA
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\bibliographystyle{alpha}
+\bibliography{biblio}
+
+%%%%%%%%%%%%%%%%
+% GENERAL INDEX
+%%%%%%%%%%%%%%%%
+%\printindex
+
+\end{document}
+%\endinput
